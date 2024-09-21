@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Funcionários</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Sistema de Funcionários</h2>
+    <form id="funcionarioForm" class="border p-4 rounded shadow">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" class="form-control" placeholder="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" class="form-control" placeholder="idade" required>
+        </div>
+        <div class="form-group">
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" class="form-control" placeholder="cargo" required>
+        </div>
+        <div class="form-group">
+            <label for="Departamento">Departamento:</label>
+            <input type="text" id="departamento" class="form-control" placeholder="departamento">
+        </div>
+        <div class="form-group">
+            <label for="linguagem">Linguagem:</label>
+            <input type="text" id="linguagem" class="form-control" placeholder="linguagem">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Adicionar Funcionário</button>
+
+    </form>
+    <div id="resultado" class="mt-4"></div>
+    <div id="erro" class="mt-2 text-danger"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
